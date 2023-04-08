@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:text="First Number"
+        android:textSize="24sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv1"
+        android:layout_alignLeft="@+id/et1"
+        android:layout_alignStart="@+id/et1"
+        android:layout_alignParentTop="true" />
+
+    <EditText
+        android:hint="Enter Int Value"
+        android:textSize="24sp"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:inputType="number"
+        android:ems="10"
+        android:layout_marginTop="17dp"
+        android:id="@+id/et1"
+        android:layout_below="@+id/tv1"
+        android:layout_alignLeft="@+id/et2"
+        android:layout_alignStart="@+id/et2" />
+
+    <TextView
+        android:text="Second Number"
+        android:textSize="24sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:id="@+id/tv2"
+        android:layout_below="@+id/et1"
+        android:layout_alignLeft="@+id/et1"
+        android:layout_alignStart="@+id/et1" />
+
+    <EditText
+        android:hint="Enter Int Value"
+        android:textSize="24sp"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:inputType="number"
+        android:ems="10"
+        android:layout_marginTop="16dp"
+        android:id="@+id/et2"
+        android:layout_below="@+id/tv2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="Result"
+        android:textSize="24sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:id="@+id/tv3"
+        android:layout_below="@+id/et2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:textSize="24sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv4"
+        android:layout_alignBaseline="@+id/tv3"
+        android:layout_alignBottom="@+id/tv3"
+        android:layout_toRightOf="@+id/et2"
+        android:layout_toEndOf="@+id/et2" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="38dp"
+        android:layout_below="@+id/tv3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <Button
+            android:text="+"
+            android:textSize="24sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/add"
+            android:onClick="click" />
+
+        <Button
+            android:text="-"
+            android:textSize="24sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/sub"
+            android:onClick="click"/>
+
+        <Button
+            android:text="*"
+            android:textSize="24sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/mul"
+            android:onClick="click"/>
+
+        <Button
+            android:text="/"
+            android:textSize="24sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/div"
+            android:onClick="click" />
+    </LinearLayout>
+
+</RelativeLayout>

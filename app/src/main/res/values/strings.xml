@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">MyTestApp</string>
+
+    <string name="emailtext_hint"><font size="10">Please enter email address here!</font></string>
+    <string name="passwordtext_hint"><font size="10">Please enter password here!</font></string>
+
+</resources>
